@@ -161,6 +161,8 @@ nav .container ul li a.active {
     color: var(--color-white);
 }
 
+
+
 /* -------------- LANDING SECTION -------------- */
 section.landing {
     display: grid;
@@ -278,6 +280,8 @@ section.landing .profile-area .inner-circle {
     overflow: hidden;
 }
 
+
+
 /* ============= ABOUT ============= */
 section.about {
     background: var(--color-light);
@@ -308,6 +312,8 @@ section.about .container .read-more {
 section.about .container .read-more-hover {
     text-decoration: underline;
 }
+
+
 
 /* ============= SKILLS ============= */
 section.skills .container {
@@ -388,6 +394,8 @@ section.skills .item:nth-child(5) .progress-bar .progress {
     width: 10%;
 }
 
+
+
 /* ============= SERVICES ============= */
 section.services {
     background: var(--color-light);
@@ -435,5 +443,7 @@ section.services .container .service:nth-child(3) span {
     color: var(--color-black);
     background: var(--color-success);
 }
+
+
 
 /* ============= PORTFOLIO ============= */
