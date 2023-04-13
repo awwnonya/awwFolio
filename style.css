@@ -666,3 +666,46 @@ footer .copyright {
     padding: 2rem 0;
     font-size: 1rem;
 }
+
+
+
+/* ============= MEDIA QUERIES ============= */
+@media screen and (max-width: 600px){
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }   
+    h5 {
+        font-size: 0.68rem;
+    }
+
+    /* ============= NAV BAR ============= */
+    nav {
+        box-sizing: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    }
+    nav h3 {
+        margin-left: 1rem;
+    }
+    nav .carousel {
+        width: 100%;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        z-index: 3;
+        width: 16rem;
+        height: 100vh;
+        background: var(--color-white);
+        box-shadow: 1rem 0 2rem var(--color-primary-light);
+    }
+}
