@@ -353,6 +353,7 @@ section.about .container .read-more {
 section.about .container .read-more-hover {
     text-decoration: underline;
 }
+
 /*
 section.about .btn {
     border: 10px var(--color-primary);
