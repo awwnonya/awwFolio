@@ -53,6 +53,7 @@ h6 {
 }
 
 h1 {
+    font-family: 'Playfair Display SC', serif;
     font-size: 3.8rem;
 }
 
@@ -77,8 +78,9 @@ p {
 }
 
 @font-face {    
-    src: url(fonts/Amalfi\ Coast.ttf);
-    font-family: 'amalfi_coastregular';
+    src: url(fonts/adelia.ttf);
+    font-family: 'hw';
+
 }
 
 .container {
@@ -125,6 +127,8 @@ img {
 
 /* ================= NAVBAR ================= */
 nav {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 1rem;
     width: 100%;
     height: 5rem;
     background: var(--color-white);
@@ -154,10 +158,10 @@ nav button {
 }
 
 nav h3 {
-    font-family: 'amalfi_coastregular';
+    font-family: 'hw';
     color: var(--color-primary);
-    font-size: 1.3rem;
-    text-shadow: 0.5px 0.5px var(--color-primary);
+    font-size: 1.4rem; 
+    margin-top: -0.4rem;   
 }
 
 /*
@@ -169,6 +173,7 @@ nav object {
 nav ul {
     display: flex;
     height: 100%;
+    word-spacing: 1.6px;
 }
 
 nav .container ul li a{
@@ -348,6 +353,19 @@ section.about .container .read-more {
 section.about .container .read-more-hover {
     text-decoration: underline;
 }
+/*
+section.about .btn {
+    border: 10px var(--color-primary);
+    border-radius: 5p;
+    background: var(--color-white);
+    color: var(--color-primary);
+}
+
+section.about .btn:hover {
+    background: var(--color-primary);
+    cursor: pointer;
+    color: var(--color-white);
+}*/
 
 
 
@@ -614,6 +632,7 @@ section.contact .container {
 
 section.contact .container h1 {
     margin: 0;
+    margin-bottom: 1.6rem;
     color: var(--color-white);
 }
 
@@ -630,6 +649,9 @@ section.contact form {
 
 section.contact form input,
 section.contact form textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 0.9rem;
     display: block;
     width: 100%;
     margin: 0.5rem 0;
@@ -656,6 +678,8 @@ section.contact form textarea::placeholder {
 }
 
 section.contact form .btn {
+    font-weight: 500;
+    font-size: 1rem;
     width: 14rem;
     border: none;
     background: var(--color-white);
@@ -683,11 +707,12 @@ footer .container {
 }
 
 footer .container h3 {
-    font-family: 'amalfi_coastregular';
+    font-family: 'hw';
     font-size: 1.3rem;
 }
 
 footer .container ul {
+    font-family: 'Playfair Display SC', serif;
     display: flex;
     gap: 3rem;
 }
@@ -725,6 +750,7 @@ footer .container .socials a:hover {
 }
 
 footer .copyright {
+    font-family: 'Playfair Display SC', serif;
     background: var(--color-primary);
     color: var(--color-white);
     text-align: center;
@@ -759,9 +785,9 @@ footer .copyright {
 
     /* ============= NAV BAR ============= */
     nav h3 {
-        margin-left: 1rem;
-        font-size: 1.1rem;
-        text-shadow: 0.5px 0.5px var(--color-primary);
+        margin-left: 1.2rem;
+        font-size: 1.2rem;
+        /*text-shadow: 0.5px 0.5px var(--color-primary); */
     }
     nav .container {
         width: 100%;
@@ -817,6 +843,7 @@ footer .copyright {
     section.landing h1  {
         text-align: center;
         margin: 0;
+        margin-top: 1.5rem;
     }
     section.landing .container .socials {
         display: none;
@@ -912,6 +939,9 @@ footer .copyright {
         grid-template-columns: 1fr;
         width: 94vw;
     }
+    section.testimonials h1 {
+        margin-bottom: 2.5rem;
+    }
     section.testimonials .container .testimonial .head .stars span {
         font-size: 0.8rem;
     }
@@ -920,6 +950,9 @@ footer .copyright {
     /* ============= CONTACTS ============= */
     section.contact .container {
         width: 94vw;
+    }
+    section.contact .container h1 {
+        margin-bottom: 1.2rem;
     }
     section.contact .container p {
         width: 80vw;
@@ -933,7 +966,7 @@ footer .copyright {
         gap: 3rem;
     }
     footer .container h3 {
-        font-family: 'amalfi_coastregular';
+        font-family: 'hw';
         font-size: 1.2rem;
         margin: 0 0 -0.5rem;
     }
@@ -941,5 +974,10 @@ footer .copyright {
         flex-direction: column;
         text-align: center;
         gap: 1.4rem;
+    }
+    footer .copyright {
+        margin-top: 4rem;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
     }
 }
