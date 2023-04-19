@@ -348,12 +348,30 @@ section.about {
 section.about .container {
     display: grid;
     grid-template-columns: 25rem auto;
-    gap: 5rem;
+    gap: 4rem;
     text-align: justify;
 }
 
 section.about .container .image {
     margin-top: 5rem;
+}
+
+section.about .container .image #circ {
+    position: relative;
+    margin-top: -27rem;
+    margin-right: -17rem;
+    font-size: 2.1vmin;
+    font-weight: bold;
+    letter-spacing: 10cap;
+    font-family: 'Playfair Display',serif;
+    text-transform: uppercase;
+    animation: spin 10s linear infinite;
+    color: #ff6739;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 section.about p {
@@ -379,7 +397,6 @@ section.about .container .read-more {
 section.about .container .read-more-hover {
     text-decoration: underline;
 }
-
 
 section.about .btn {
     background: var(--color-primary);
@@ -562,7 +579,7 @@ section.recent-work .container h3 {
 
 section.recent-work .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
 }
 
@@ -940,11 +957,28 @@ footer .copyright {
     section.about .container {
         margin-top: -2rem;
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 17rem;
         text-align: center;
     }
     section.about .container .image {
-        margin-top: 2rem;
+        margin-top: -0.5rem;
+    }
+    section.about .container .image #circ {
+        position: relative;
+        margin-top: -25rem;
+        margin-right: -15rem;
+        font-size: 3.2vmin;
+        font-weight: bold;
+        letter-spacing: 10cap;
+        font-family: 'Playfair Display',serif;
+        text-transform: uppercase;
+        animation: spin 10s linear infinite;
+        color: #ff6739;
+    }
+    @keyframes spin{
+        100%{
+            transform: rotate(360deg);
+        }
     }
 
 

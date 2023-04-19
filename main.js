@@ -25,6 +25,7 @@ closeBtn.addEventListener('click', () => {
   closeBtn.style.display = 'none';
 })
 
+
 const navItems = menu.querySelectorAll('li');
 
 const changeActiveIcon = () => {
@@ -55,6 +56,10 @@ readMoreBtn.addEventListener('click', () => {
     readMoreBtn.textContent = "Show more";
   }
 })
+
+//CIRCLE ROTATION
+let circ = new CircleType(document.getElementById('circ'));
+circ.raduis(360);
 
 // show/hide skills
 const skillItems = document.querySelectorAll('section.skills .skill');
