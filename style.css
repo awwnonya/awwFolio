@@ -801,7 +801,7 @@ footer .container .socials a {
 footer .container .socials a:hover {
     background: var(--color-primary);
     color: var(--color-white);
-    box-shadow: -2px 0 5px var(--color-primary);
+    box-shadow: 0 2px 5px var(--color-primary);
     transform: translateY(-5px);
 }
 
