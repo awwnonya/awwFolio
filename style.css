@@ -563,7 +563,7 @@ section.recent-work {
     padding-bottom: 10rem;
 }
 section.recent-work .container {
-    height: 400px;
+    height: 500px;
     margin: auto;
     position: relative;
     width: 100%;
@@ -575,16 +575,16 @@ section.recent-work .container {
 
 section.recent-work .slide-container {
     display: flex;
-    width: calc(450px *18);
-    gap: 13rem;
-    animation: scroll 20s linear infinite;
+    width: calc(650px *22);
+    gap: 16rem;
+    animation: scroll 40s linear infinite;
 }
 @keyframes scroll {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-250px*9));
+        transform: translateX(calc(-250px*14));
     }
 }
 
@@ -593,18 +593,18 @@ section.recent-work .slide-container .slide-image {
     width: 200px;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 30px;
     perspective: 100px;
 }
 
 section.recent-work img {
-    width: 200%;
-    height: 200%;
+    width: 300%;
+    height: 300%;
     transition: transform 1s;
 }
 
 section.recent-work img:hover {
-    transform: translateZ(10px);
+    transform: translateZ(4px);
 }
 
 section.recent-work .btn {
@@ -1027,6 +1027,50 @@ footer .copyright {
         width: 94vw;
         text-align: center;
         margin: 1.4rem 0 2rem;
+    }
+    section.recent-work .container {
+        height: 400px;
+        margin: auto;
+        position: relative;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        margin-top: -1rem;    
+    }
+    
+    section.recent-work .slide-container {
+        display: flex;
+        width: calc(450px *22);
+        gap: 12rem;
+        animation: scroll 40s linear infinite;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-250px*16));
+        }
+    }
+    
+    section.recent-work .slide-container .slide-image {
+        height: 200px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        perspective: 100px;
+    }
+    
+    section.recent-work img {
+        width: 250%;
+        height: 250%;
+        transition: transform 1s;
+    }
+    
+    section.recent-work img:hover {
+        transform: translateZ(3px);
     }
     
 
